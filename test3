@@ -1,1 +1,6 @@
-test3
+touch vishal.php
+git init
+git add vishal.php
+git commit -m "first commit"
+git remote add origin https://github.com/Vishal431
+git push -u origin master
