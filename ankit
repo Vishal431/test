@@ -1,0 +1,8 @@
+$productCollection = Mage::getModel('catalog/product')->getCollection()->load();
+
+var n = jQuery('#inc').val();
+		var p = <?php echo ceil(count($productCollection)/10); ?>;
+		if (n == p) 
+		{
+			jQuery("#load").hide();
+		}
