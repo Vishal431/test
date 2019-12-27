@@ -6,3 +6,4 @@ var n = jQuery('#inc').val();
 		{
 			jQuery("#load").hide();
 		}
+https://docs.google.com/document/d/1O9lt8l5iEiLQ40RS2zs1dBUhV5Tp5RklSpzWPDC0kCM/edit
