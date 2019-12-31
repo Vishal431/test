@@ -1,0 +1,118 @@
+admin = https://vishal.mybigcommerce.com/manage/storefront-manager/my-themes
+front-end = http://localhost:3000/
+/var/www/html/bigcommerce/cornerstone/templates/components/common
+
+hello@gmail.com
+hello@123
+
+vishalsojitra431@gmail.com
+So@9067520171
+
+=> includ js file in big commerce
+-> <script src="{{cdn 'assets/js/theme/custom.js'}}"></script>
+-> https://github.com/bigcommerce/cornerstone/issues/1412 (Refrencce)
+
+sudo apt-get update
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.0/install.sh | bash
+source ~/.bashrc
+nvm install 10.16
+nvm -v
+npm install -g @bigcommerce/stencil-cli
+stencil init
+stencil start
+
+
+=> Shopify :-
+Slider Reffrence
+https://www.cssscript.com/automatic-image-slider-with-pure-css/
+https://codepen.io/IsoLennox/pen/cJfBj
+
+
+{{ content_for_index }}
+<div class="new">
+  	<div class="container">
+	  	<div class="slideshow_wrapper">
+		    <div class="slideshow">
+			    <div class="slide_one slide">
+			        <img src="https://images.pexels.com/photos/1227520/pexels-photo-1227520.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
+			    </div>
+			      
+			    <div class="slide_two slide">
+			        <img src="https://images.pexels.com/photos/1591447/pexels-photo-1591447.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
+			    </div>
+			      
+			    <div class="slide_three slide">
+			        <img src="https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
+			    </div>
+
+			    <div class="slide_four slide">
+			        <img src="https://images.pexels.com/photos/754082/pexels-photo-754082.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+			    </div>
+
+			    <div class="slide_five slide">
+			        <img src="https://cdn.pixabay.com/photo/2018/06/30/09/31/background-image-3507320_960_720.jpg">
+			    </div>
+	    	</div>
+    	</div>
+    </div>
+</div>
+.new .container {
+  width:500px;
+  margin: 0 auto;
+  padding: 10px 10px 0 10px;
+  
+  
+}
+
+.new .slideshow_wrapper {
+  width:500px;
+  height:280px;
+  overflow: hidden;
+   
+}
+
+.new .slideshow {
+  width:2500px;
+  height:280px;
+  margin: 0 0 0 -2000px;
+  position: relative;
+  -webkit-animation-name: slide_animation;
+  -webkit-animation-duration:10s;
+  -webkit-animation-iteration-count:infinite;
+  -webkit-animation-direction:alternate;
+  -webkit-animation-play-state: running;
+}
+
+.new .slide {
+  
+  width:500px;
+  height: 270px;
+  position:relative;
+  float:left;
+  overflow:hidden;
+  
+}
+
+.new .slideshow img{
+  width:500px; 
+  height:270px;
+}
+
+@-webkit-keyframes slide_animation {
+  
+  0% {left:0px;}
+  10% {left:500px;}
+  20% {left:500px;}
+  30% {left:1000px;}
+  40% {left:1000px;}
+  50% {left:1500px;}
+  60% {left:1500px;}
+  70% {left:1500px;}
+  80% {left:2000px;}
+  90% {left:2000px;}
+  100% {left:2000px;}
+  
+  
+}
+instagram feed integrate in shopify
+-> https://appstore.mageworx.com/blog/how-to-embed-instagram-feed-in-your-shopify-site/
