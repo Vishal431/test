@@ -1,0 +1,61 @@
+=> Crete Composer.json File For Custome Module
+    -> Give Command From Magento module Directory
+    	-> Ex. [/var/www/html/magento2/app/code/Product/Collection]
+	-> composer init
+
+=> composer.json File Create Like This in [/var/www/html/magento2/app/code/Product/Collection/composer.json]
+	
+	{
+	    "name": "product/collection",
+	    "description": "Collection",
+	    "type": "composer-plugin",
+	    "license": "MIT",
+	    "authors": [
+	        {
+	            "name": "Vishal Sojitra",
+	            "email": "vishalsojitra431@gmail.com"
+	        }
+	    ],
+	    "minimum-stability": "dev",
+	    "require": {"php": ">=5.3.0"},
+	    "autoload": {
+	        "files": [
+	          "registration.php"
+	        ],
+	        "psr-0": {
+	            "collection": "src/"
+	        }
+	    }
+	}
+
+
+=> Push Code To Git
+	-> Give Command From Magento module Directory
+    	-> Ex. [/var/www/html/magento2/app/code/Product/Collection]
+	-> git init
+	-> git add .
+	-> git commit -m "Collection"
+	-> git remote add origin https://github.com/Vishal431/Col.git
+	-> git push origin master -f
+
+=> https://packagist.org/
+	-> Signin With Github Account
+	-> Click to Submit Button 
+	-> Enter Git Repository URL
+	-> You See Your Package In packagist.org
+
+=> Run Your Package In Magento Root Directory
+	-> Ex. [/var/www/html/magento2/]
+	-> composer require product/collection
+
+=> Check Your Module In Magento Vendor Folder
+	-> Ex [/var/www/html/magento2/vendor]
+
+=> Run Magento Basic Command
+	-> php bin/magento setup:upgrade
+	-> php bin/magento setup:di:compile
+	-> php bin/magento setup:static-content:deploy -f
+	-> php bin/magento cache:clean
+	-> php bin/magento indexer:reindex
+
+=> Your Module Is Successfully Run 
