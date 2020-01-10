@@ -46,7 +46,7 @@
 
 => Run Your Package In Magento Root Directory
 	-> Ex. [/var/www/html/magento2/]
-	-> composer require product/collection
+	-> composer require product/collection @dev
 
 => Check Your Module In Magento Vendor Folder
 	-> Ex [/var/www/html/magento2/vendor]
