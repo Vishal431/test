@@ -1,0 +1,54 @@
+=> https://www.simicart.com/blog/magento-pwa-studio-setup/
+
+=> Give Command From Magento Root Directory
+	-> git clone https://github.com/magento-research/pwa-studio/
+							[[OR]]
+	-> git clone https://github.com/Vishal431/pwa-studio
+
+	-> cd pwa-studio
+	-> git checkout release/4.0
+
+=> Modify package.json
+	-> Under “workspaces”:
+
+		"workspaces": [
+		...
+		    "packages/venia-ui",
+		    "packages/simi-studio"
+		  ],
+
+	-> Under “scripts”:
+
+	  	"scripts": {
+			...
+		    "watch:venia": "yarn venia run watch",
+		    "watch:simi-studio": "yarn workspace @simicart/simi-studio run watch",
+		    "stage:simi-studio": "yarn workspace @simicart/simi-studio run start"
+	  	},
+
+=> Run the following commands to clone simi-studio repository and install the project dependencies
+
+	-> cd  packages
+	
+	-> git clone https://github.com/Simicart/simi-studio
+						[[OR]]
+	-> git clone https://github.com/Vishal431/simi-studio
+	
+	-> cd ..
+	-> yarn install
+		-> gyp error Found Than Run Command
+			-> npm uninstall -g node-gyp
+			-> npm install -g node-gyp@6.0.1
+			-> npm install -g canvas
+
+	-> Copy The .env File From [/var/www/html/magento2/pwa-studio/packages/simi-studio/] To [/var/www/html/magento2/pwa-studio/packages/venia-concept]   
+	
+	-> Change The .env File Magento Backend Url Like
+		-> Ex. MAGENTO_BACKEND_URL=http://localhost/magento2/
+	-> yarn run build
+
+=> Start the server
+	-> yarn run watch:simi-studio // It Display Magento venia Default Theme
+	-> yarn run watch:venia // It Display Magento venia Default Theme But Magento Category And Products
+
+=> https://mage2.pro/t/topic/840 // For Braintree Merchant ID [2jb4sr36x7243xv5] and Merchant Account ID [test]
