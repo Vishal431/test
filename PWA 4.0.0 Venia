@@ -36,6 +36,14 @@
 	
 	-> cd ..
 	-> yarn install
+		-> [1/5] Validating package.json...
+	 	   error @magento/pwa-studio@4.0.0-rc.1: The engine "node" is incompatible with this module. Expected version ">=10.x". Got "8.10.0"
+		   error Found incompatible module.
+			-> sudo npm install n -g
+			-> sudo n stable
+			-> sudo n latest
+			=> Ref (https://stackoverflow.com/questions/10075990/upgrading-node-js-to-latest-version)
+				[[OR]]
 		-> gyp error Found Than Run Command
 			-> npm uninstall -g node-gyp
 			-> npm install -g node-gyp@6.0.1
