@@ -1,0 +1,14 @@
+<Query query={testa}>
+            {({ data, loading }) => (
+              <div>
+                {loading
+                  ? 'loading...'
+                  : data.category.children.map(({ id, name }) => (
+                      <div>
+                        <p><b>ID :</b> {id} </p>
+                        <p><b>Name :</b> {name} </p>
+                      </div>
+                    ))}
+              </div>
+            )}
+        </Query>
