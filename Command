@@ -112,7 +112,10 @@ To
 	Require all granted
 </Directory>
 
+and command = sudo a2enmod rewrite
+
 url = https://magenhosting.com/tutorial/the-requested-url-was-not-found-on-this-server-after-installing-magento-2
+url = https://magecomp.com/blog/fix-404-error-page-not-found-admin-url-magento-2/
 
 php bin/magento setup:install --base-url=http://127.0.0.1/magento/ \
  --db-host=localhost --db-name=magento \
