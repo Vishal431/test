@@ -21,6 +21,8 @@ npm install -g @bigcommerce/stencil-cli
 stencil init
 stencil start
 
+=> Npm install error Than install npm webpack for big commerce
+
 
 => Shopify :-
 Slider Reffrence
