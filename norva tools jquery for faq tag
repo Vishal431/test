@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $(".faq button").click(function(){
+  	x = $(this).val();
+	alert(x);
+  	$(".section").hide();
+    $("."+x).parent().show();
+  });
+  $("p").click(function(){
+    $(this).parent().hide();
+  });
+});
+</script>
+</head>
+<body>
+
+<div class="faq"><button value="test">test</button>
+<button value="new">new</button></div>
+<div class="section"><div class="test"><p>If you click on me,</p></div></div>
+<div class="section"><div class="test new"><p>Click me away!v</p></div></div>
+<div class="section"><div class="new"><p>Click me too! tedbjk</p></div></div>
+<div class="section"><div class="new"><p>Click m hello world!</p></div></div>
+<button value="testhello">testhello</button>
+</body>
+</html>
+
+
