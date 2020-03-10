@@ -1,0 +1,8 @@
+$(document).ready(function(){
+  $("li .product-item-info .product-item-details").each(function(){
+  
+  var price = $(this).find(".price-box");
+  var stock = $(this).find(".price-with-status .stock");
+    $(price).insertAfter(stock);
+});
+});
