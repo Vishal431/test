@@ -46,3 +46,24 @@
             });
         </script>
     </div>
+
+
+Or
+
+<script>
+   require(['jquery','owlcarousel'], function(){
+       jQuery(document).ready(function() {
+           jQuery("#feature_product_slider").owlCarousel({
+                items: 4,
+                itemsDesktop: [1199, 3],
+                itemsDesktopSmall: [950, 2],
+                itemsTablet: [768, 2],
+                itemsTabletSmall: [639, 2],
+                itemsMobile: [479, 1],
+                pagination: false,
+                navigationText: ['<div class="lft-btn"><i class="material-icons">keyboard_arrow_left</i></div>', '<div class="rgt-btn"><i class="material-icons">keyboard_arrow_right</i></div>'],
+                navigation: true,
+           });
+       });
+   });
+</script>
